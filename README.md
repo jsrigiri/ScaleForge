@@ -129,7 +129,7 @@ See: docs/architecture.md
 
 ## Dashboard
 
-![Dashboard](docs/dashboard.png)
+![Dashboard](docs/images/dashboard.png)
 
 ## Kubernetes Training Job
 
