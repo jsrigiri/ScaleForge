@@ -1,0 +1,20 @@
+FROM pytorch/pytorch:2.5.1-cuda12.1-cudnn9-devel
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    ninja-build \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY requirements.txt .
+
+RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir deepspeed
+
+COPY . .
+
+RUN pip install -e .
+
+CMD ["deepspeed", "--num_gpus=1", "train.py", "--config", "configs/experiments/deepspeed_zero2.yaml"]

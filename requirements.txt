@@ -1,0 +1,10 @@
+torch
+pyyaml
+pandas
+numpy
+psutil
+pytest
+streamlit
+nvidia-ml-py
+mlflow
+pytest-cov
