@@ -129,19 +129,19 @@ See: docs/architecture.md
 
 ## Dashboard
 
-![Dashboard](dashboard.png)
+![Dashboard](docs/images/dashboard.png)
 
 ## Kubernetes Training Job
 
-![Kubernetes](kubernetes.png)
+![Kubernetes](docs/images/kubernetes.png)
 
 ## MLflow Overview
 
-![MLflow Overview](mlflow1.png)
+![MLflow Overview](docs/images/mlflow1.png)
 
 ## MLflow Metrics
 
-![MLflow Metrics](mlflow2.png)
+![MLflow Metrics](docs/images/mlflow2.png)
 
 ---
 
